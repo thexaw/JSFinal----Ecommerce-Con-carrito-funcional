@@ -1,0 +1,923 @@
+/*--GENERAL--*/
+* {
+  margin: 0;
+  padding: 0; }
+
+header nav ul li, body .lmv, body .acercade h2, .encuentranos {
+  color: white;
+  text-align: center; }
+
+/*--HEADER--*/
+header nav ul {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  height: 80px;
+  border-radius: 0 0 15px 15px;
+  z-index: 2;
+  background: #112D4E;
+  font-weight: 600;
+  font-size: 18px;
+  list-style: none;
+  box-shadow: 1px 1px 5px 0px var(--gray);
+  position: sticky; }
+  header nav ul li {
+    list-style: none;
+    font-family: 'Roboto Slab', serif;
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none; }
+    header nav ul li a {
+      text-decoration: none;
+      color: white; }
+  header nav ul .logocontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header nav ul .logocontainer img {
+      max-height: 60px; }
+
+/*--MQUERY HEADER--*/
+@media only screen and (max-width: 874px) {
+  header {
+    background-color: #112D4E; }
+    header nav ul {
+      list-style: none;
+      font-family: 'Roboto Slab', serif;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px; }
+      header nav ul li {
+        list-style: none;
+        font-family: 'Roboto Slab', serif;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none; }
+        header nav ul li a {
+          text-decoration: none;
+          color: white; }
+      header nav ul .nav-tabs {
+        text-size-adjust: 19px;
+        font-size: 15px; } }
+
+@media only screen and (max-width: 500px) {
+  header {
+    background-color: #112D4E; }
+    header nav ul {
+      list-style: none;
+      font-family: 'Roboto Slab', serif;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px; }
+      header nav ul li {
+        list-style: none;
+        font-family: 'Roboto Slab', serif;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 6px 6px;
+        text-decoration: none; }
+        header nav ul li a {
+          text-decoration: none;
+          color: white; }
+      header nav ul .nav-tabs {
+        text-size-adjust: 19px;
+        font-size: 13px; } }
+
+/*MAIN BODY*/
+body {
+  background-color: #3F72AF; }
+  body .carrusel {
+    background-color: #3F72AF;
+    font-family: 'Roboto Slab', serif;
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    body .carrusel div {
+      display: block;
+      align-items: center;
+      outline: none;
+      height: 100%;
+      max-height: 133%;
+      width: 50vw;
+      box-sizing: border-box; }
+      body .carrusel div img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+  body .lmv {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #3F72AF;
+    font-family: 'Roboto Slab', serif; }
+    body .lmv h2 {
+      text-size-adjust: 200%;
+      padding: 35px;
+      position: absolute;
+      right: 50%;
+      transform: translate(50%, -50%);
+      text-transform: uppercase;
+      font-family: verdana;
+      font-weight: 700;
+      color: #f5f5f5;
+      text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); }
+    body .lmv .cc1, body .lmv .cc2, body .lmv .cc3 {
+      display: inline-block;
+      margin: 60px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+      border-radius: 12px;
+      overflow: hidden; }
+      body .lmv .cc1:hover, body .lmv .cc2:hover, body .lmv .cc3:hover {
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        transform: scale(1.3, 1.3);
+        transition: 0.5s; }
+      body .lmv .cc1 h3, body .lmv .cc2 h3, body .lmv .cc3 h3 {
+        background-color: rgba(7, 17, 109, 0.342);
+        margin-bottom: 15px; }
+      body .lmv .cc1 h4, body .lmv .cc2 h4, body .lmv .cc3 h4 {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px; }
+      body .lmv .cc1 img, body .lmv .cc2 img, body .lmv .cc3 img {
+        height: 300px;
+        border-radius: 30px; }
+  body .acercade {
+    background-color: #3F72AF;
+    font-family: 'Roboto Slab', serif;
+    color: white; }
+    body .acercade h2 {
+      padding: 20px;
+      padding-bottom: 30px; }
+    body .acercade h3 {
+      text-align: justify;
+      padding: 20px;
+      padding: bottom 30px; }
+
+/*--GRID INDEX--*/
+/*GRID MAIN BODY INDEX*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat auto-fit, minmax(200px, 1fr);
+  gap: 0px 0px;
+  grid-template-areas: "cabecera cabecera cabecera" "carrusel carrusel carrusel" "lmv lmv lmv" "acercade acercade acercade"; }
+
+.cabecera {
+  grid-area: cabecera; }
+
+.carrusel {
+  grid-area: carrusel; }
+
+.lmv {
+  grid-area: lmv; }
+
+.acercade {
+  grid-area: acercade; }
+
+/*--FOOTER--*/
+/*FOOTER*/
+footer {
+  background-color: #3F72AF;
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: end; }
+  footer img {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    justify-content: end;
+    align-items: flex-end; }
+  footer h4 {
+    color: white;
+    font-size: 11px;
+    padding-right: 15px; }
+
+/*--PRODUCTOS--*/
+/*PRODUCTS*/
+/*FEMENINO*/
+@media only screen and (max-width: 706px) {
+  .women {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #2b568a;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: white; }
+    .women h2 {
+      text-size-adjust: 200%;
+      padding: 35px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #f5f5f5;
+      text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); }
+    .women .card {
+      display: inline-block;
+      max-width: 650px;
+      height: auto;
+      margin: 20px 15px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      border-radius: 7px 7px 7px 7px;
+      align-items: center;
+      background-color: white;
+      transition: .5s ease; }
+      .women .card:hover {
+        box-shadow: 1px 1px #373737, 2px 2px #373737, 3px 3px #373737, 4px 4px #373737, 5px 5px #373737, 6px 6px #373737;
+        -webkit-transform: translateX(-50px) scale(1.05);
+        transform: translateX(-10px) scale(1.05);
+        transition: .5s ease; }
+      .women .card img {
+        float: center;
+        height: 420px;
+        width: 320px;
+        border-radius: 7px 7px 7px 7px; }
+      .women .card .card__info {
+        float: center;
+        height: auto;
+        width: 327px;
+        border-radius: 7px 7px 10px 7px;
+        background-color: #ffffff;
+        color: black; }
+        .women .card .card__info h3 {
+          margin: 0 10px 0 10px;
+          padding-top: 15px;
+          font-size: 30px;
+          color: #474747; }
+        .women .card .card__info p {
+          height: auto;
+          margin: 0 10px 0 10px;
+          font-family: sans-serif, serif;
+          color: #8d8d8d;
+          font-size: 15px;
+          font-weight: lighter;
+          overflow: hidden; }
+        .women .card .card__info span {
+          display: inline-block;
+          height: 50px;
+          font-family: 'Suranna', serif;
+          font-size: 34px; }
+        .women .card .card__info .btnbuy {
+          height: 103px;
+          width: 327px;
+          margin-top: 1px;
+          position: center; }
+          .women .card .card__info .btnbuy button {
+            float: none;
+            display: inline-block;
+            height: 50px;
+            width: 176px;
+            margin: 0 40px 0 16px;
+            box-sizing: border-box;
+            border: transparent;
+            border-radius: 60px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #ffffff;
+            background-color: #311bf7; }
+        .women .card .card__info .buttons {
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+          font-size: 16px;
+          align-items: center;
+          justify-content: space-around; }
+          .women .card .card__info .buttons .bi-dash-lg {
+            color: red; }
+          .women .card .card__info .buttons .bi-plus-lg {
+            color: green; } }
+
+@media only screen and (min-width: 707px) {
+  .women {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #2b568a;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: white; }
+    .women h2 {
+      text-size-adjust: 200%;
+      padding: 35px; }
+    .women .card {
+      display: inline-block;
+      max-width: 650px;
+      height: auto;
+      margin: 50px 30px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      border-radius: 7px 7px 7px 7px;
+      align-items: center;
+      background-color: white;
+      transition: .5s ease; }
+      .women .card:hover {
+        box-shadow: 1px 1px #373737, 2px 2px #373737, 3px 3px #373737, 4px 4px #373737, 5px 5px #373737, 6px 6px #373737;
+        -webkit-transform: translateX(-50px) scale(1.05);
+        transform: translateX(-10px) scale(1.05);
+        transition: .5s ease; }
+      .women .card img {
+        float: left;
+        height: 420px;
+        width: 320px;
+        border-radius: 7px 7px 7px 7px; }
+      .women .card .card__info {
+        float: left;
+        height: 420px;
+        width: 327px;
+        border-radius: 7px 7px 10px 7px;
+        background-color: #ffffff;
+        color: black; }
+        .women .card .card__info h3 {
+          margin: 0 0 0 38px;
+          padding-top: 10px;
+          font-size: 34px;
+          color: #474747; }
+        .women .card .card__info p {
+          height: 50px;
+          margin: 0 0 0 25px;
+          font-family: sans-serif, serif;
+          color: #8d8d8d;
+          font-size: 15px;
+          font-weight: lighter;
+          overflow: hidden; }
+        .women .card .card__info span {
+          display: inline-block;
+          height: 50px;
+          font-family: 'Suranna', serif;
+          font-size: 34px; }
+        .women .card .card__info .btnbuy {
+          height: 103px;
+          width: 327px;
+          margin-top: 1px;
+          position: relative; }
+          .women .card .card__info .btnbuy button {
+            cursor: pointer;
+            float: none;
+            display: inline-block;
+            height: 50px;
+            width: 176px;
+            margin: 0 40px 0 16px;
+            box-sizing: border-box;
+            border: transparent;
+            border-radius: 60px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #ffffff;
+            background-color: #311bf7; }
+        .women .card .card__info .buttons {
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+          font-size: 16px;
+          align-items: center;
+          justify-content: space-around;
+          padding: 20px; }
+          .women .card .card__info .buttons .bi-dash-lg {
+            color: red; }
+          .women .card .card__info .buttons .bi-plus-lg {
+            color: green; } }
+
+/*MASCULINO*/
+@media only screen and (max-width: 705px) {
+  .men {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #2b568a;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: white; }
+    .men h2 {
+      text-size-adjust: 200%;
+      padding: 35px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #f5f5f5;
+      text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); }
+    .men .mcard {
+      display: inline-block;
+      margin: 10px 5px;
+      max-width: 650px;
+      height: auto;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      border-radius: 7px 7px 7px 7px;
+      align-items: center;
+      background-color: lightgray;
+      -webkit-filter: brightness(95%);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+      filter: brightness(95%); }
+      .men .mcard:hover {
+        -webkit-filter: brightness(105%);
+        filter: brightness(105%); }
+      .men .mcard img {
+        float: center;
+        height: 420px;
+        width: 320px;
+        border-radius: 7px 7px 7px 7px; }
+      .men .mcard .mcard__info {
+        float: center;
+        height: auto;
+        width: 327px;
+        border-radius: 7px 7px 10px 7px;
+        background-color: lightgray;
+        color: black; }
+        .men .mcard .mcard__info h3 {
+          margin: 0 12px 0 12px;
+          padding-top: 10px;
+          font-size: 30px;
+          color: #474747; }
+        .men .mcard .mcard__info p {
+          height: auto;
+          margin: 5px 11px 5px 11px;
+          font-family: sans-serif, serif;
+          color: #8d8d8d;
+          font-size: 16px;
+          font-weight: lighter;
+          overflow: hidden; }
+        .men .mcard .mcard__info .mbtnbuy span {
+          display: inline-block;
+          height: 50px;
+          font-family: 'Suranna', serif;
+          font-size: 34px; }
+        .men .mcard .mcard__info .mbtnbuy button {
+          float: none;
+          display: inline-block;
+          height: 50px;
+          width: 176px;
+          margin: 0 30px 0 18px;
+          box-sizing: border-box;
+          border: transparent;
+          border-radius: 70px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-size: 16px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: #ffffff;
+          background-color: #1512b4; }
+        .men .mcard .mcard__info .buttons {
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+          font-size: 16px;
+          align-items: center;
+          justify-content: space-around;
+          padding: 20px; }
+          .men .mcard .mcard__info .buttons .bi-dash-lg {
+            color: red; }
+          .men .mcard .mcard__info .buttons .bi-plus-lg {
+            color: green; } }
+
+@media only screen and (min-width: 706px) {
+  .men {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #2b568a;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: white; }
+    .men h2 {
+      text-size-adjust: 200%;
+      padding: 35px; }
+    .men .mcard {
+      display: inline-block;
+      height: 420px;
+      width: 654px;
+      margin: 50px 30px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      border-radius: 7px 7px 7px 7px;
+      align-items: center;
+      background-color: lightgray;
+      -webkit-filter: brightness(95%);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+      filter: brightness(95%); }
+      .men .mcard:hover {
+        -webkit-filter: brightness(105%);
+        filter: brightness(105%); }
+      .men .mcard img {
+        float: right;
+        height: 420px;
+        width: 320px;
+        border-radius: 0 7px 7px 0; }
+      .men .mcard .mcard__info {
+        float: left;
+        height: 420px;
+        width: 327px;
+        border-radius: 7px 7px 10px 7px;
+        background-color: lightgray;
+        color: black; }
+        .men .mcard .mcard__info h3 {
+          margin: 0 0 0 38px;
+          padding-top: 52px;
+          font-size: 34px;
+          color: #474747; }
+        .men .mcard .mcard__info p {
+          height: 125px;
+          margin: 0 0 0 25px;
+          font-family: sans-serif, serif;
+          color: #8d8d8d;
+          font-size: 15px;
+          font-weight: lighter;
+          overflow: hidden; }
+        .men .mcard .mcard__info .mbtnbuy span {
+          display: inline-block;
+          height: 50px;
+          font-family: 'Suranna', serif;
+          font-size: 34px; }
+        .men .mcard .mcard__info .mbtnbuy button {
+          float: none;
+          display: inline-block;
+          height: 50px;
+          width: 176px;
+          margin: 0 30px 0 18px;
+          box-sizing: border-box;
+          border: transparent;
+          border-radius: 70px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-size: 16px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: #ffffff;
+          background-color: #1512b4; }
+        .men .mcard .mcard__info .buttons {
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+          font-size: 16px;
+          align-items: center;
+          justify-content: space-around;
+          padding: 20px; }
+          .men .mcard .mcard__info .buttons .bi-dash-lg {
+            color: red; }
+          .men .mcard .mcard__info .buttons .bi-plus-lg {
+            color: green; } }
+
+/*INFANTIL GRID */
+@media only screen and (min-width: 835px) {
+  .kidsgrid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.05fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "infantil infantil" "card1 card2" "card3 card4";
+    justify-items: center; }
+    .kidsgrid .infantil {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-size-adjust: 400%;
+      padding: 35px;
+      text-align: center;
+      text-size-adjust: 200%;
+      padding: 35px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #f5f5f5;
+      text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); }
+    .kidsgrid .card1, .kidsgrid .card2, .kidsgrid .card3, .kidsgrid .card4 {
+      display: grid;
+      max-width: 650px;
+      height: 750px;
+      margin: 50px 30px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      border-radius: 7px 7px 7px 7px;
+      background-color: white;
+      justify-items: center;
+      transition: 1s ease; }
+      .kidsgrid .card1:hover, .kidsgrid .card2:hover, .kidsgrid .card3:hover, .kidsgrid .card4:hover {
+        -webkit-transform: rotateZ(-4deg) scale(1.2);
+        -ms-transform: rotateZ(-4deg) scale(1.2);
+        transform: rotateZ(-4deg) scale(1.2);
+        transition: 1s ease; }
+      .kidsgrid .card1 img, .kidsgrid .card2 img, .kidsgrid .card3 img, .kidsgrid .card4 img {
+        height: auto;
+        max-width: 350px;
+        border-radius: 7px 7px 7px 7px;
+        align-self: center; }
+      .kidsgrid .card1 .card1__info, .kidsgrid .card1 .card2__info, .kidsgrid .card1 .card3__info, .kidsgrid .card1 .card4__info, .kidsgrid .card2 .card1__info, .kidsgrid .card2 .card2__info, .kidsgrid .card2 .card3__info, .kidsgrid .card2 .card4__info, .kidsgrid .card3 .card1__info, .kidsgrid .card3 .card2__info, .kidsgrid .card3 .card3__info, .kidsgrid .card3 .card4__info, .kidsgrid .card4 .card1__info, .kidsgrid .card4 .card2__info, .kidsgrid .card4 .card3__info, .kidsgrid .card4 .card4__info {
+        height: auto;
+        max-width: 340px;
+        border-radius: 7px 7px 10px 7px;
+        background-color: #ffffff;
+        color: black; }
+        .kidsgrid .card1 .card1__info h3, .kidsgrid .card1 .card2__info h3, .kidsgrid .card1 .card3__info h3, .kidsgrid .card1 .card4__info h3, .kidsgrid .card2 .card1__info h3, .kidsgrid .card2 .card2__info h3, .kidsgrid .card2 .card3__info h3, .kidsgrid .card2 .card4__info h3, .kidsgrid .card3 .card1__info h3, .kidsgrid .card3 .card2__info h3, .kidsgrid .card3 .card3__info h3, .kidsgrid .card3 .card4__info h3, .kidsgrid .card4 .card1__info h3, .kidsgrid .card4 .card2__info h3, .kidsgrid .card4 .card3__info h3, .kidsgrid .card4 .card4__info h3 {
+          margin: 0 0 0 10px;
+          padding-top: 10px;
+          font-size: 35px;
+          color: #474747; }
+        .kidsgrid .card1 .card1__info p, .kidsgrid .card1 .card2__info p, .kidsgrid .card1 .card3__info p, .kidsgrid .card1 .card4__info p, .kidsgrid .card2 .card1__info p, .kidsgrid .card2 .card2__info p, .kidsgrid .card2 .card3__info p, .kidsgrid .card2 .card4__info p, .kidsgrid .card3 .card1__info p, .kidsgrid .card3 .card2__info p, .kidsgrid .card3 .card3__info p, .kidsgrid .card3 .card4__info p, .kidsgrid .card4 .card1__info p, .kidsgrid .card4 .card2__info p, .kidsgrid .card4 .card3__info p, .kidsgrid .card4 .card4__info p {
+          height: auto;
+          margin: 10px 20px 10px 25px;
+          font-family: sans-serif, serif;
+          color: #8d8d8d;
+          font-size: 15px;
+          font-weight: lighter;
+          overflow: hidden;
+          align-self: center; }
+        .kidsgrid .card1 .card1__info .btnbuy1, .kidsgrid .card1 .card1__info .btnbuy2, .kidsgrid .card1 .card1__info .btnbuy3, .kidsgrid .card1 .card1__info .btnbuy4, .kidsgrid .card1 .card2__info .btnbuy1, .kidsgrid .card1 .card2__info .btnbuy2, .kidsgrid .card1 .card2__info .btnbuy3, .kidsgrid .card1 .card2__info .btnbuy4, .kidsgrid .card1 .card3__info .btnbuy1, .kidsgrid .card1 .card3__info .btnbuy2, .kidsgrid .card1 .card3__info .btnbuy3, .kidsgrid .card1 .card3__info .btnbuy4, .kidsgrid .card1 .card4__info .btnbuy1, .kidsgrid .card1 .card4__info .btnbuy2, .kidsgrid .card1 .card4__info .btnbuy3, .kidsgrid .card1 .card4__info .btnbuy4, .kidsgrid .card2 .card1__info .btnbuy1, .kidsgrid .card2 .card1__info .btnbuy2, .kidsgrid .card2 .card1__info .btnbuy3, .kidsgrid .card2 .card1__info .btnbuy4, .kidsgrid .card2 .card2__info .btnbuy1, .kidsgrid .card2 .card2__info .btnbuy2, .kidsgrid .card2 .card2__info .btnbuy3, .kidsgrid .card2 .card2__info .btnbuy4, .kidsgrid .card2 .card3__info .btnbuy1, .kidsgrid .card2 .card3__info .btnbuy2, .kidsgrid .card2 .card3__info .btnbuy3, .kidsgrid .card2 .card3__info .btnbuy4, .kidsgrid .card2 .card4__info .btnbuy1, .kidsgrid .card2 .card4__info .btnbuy2, .kidsgrid .card2 .card4__info .btnbuy3, .kidsgrid .card2 .card4__info .btnbuy4, .kidsgrid .card3 .card1__info .btnbuy1, .kidsgrid .card3 .card1__info .btnbuy2, .kidsgrid .card3 .card1__info .btnbuy3, .kidsgrid .card3 .card1__info .btnbuy4, .kidsgrid .card3 .card2__info .btnbuy1, .kidsgrid .card3 .card2__info .btnbuy2, .kidsgrid .card3 .card2__info .btnbuy3, .kidsgrid .card3 .card2__info .btnbuy4, .kidsgrid .card3 .card3__info .btnbuy1, .kidsgrid .card3 .card3__info .btnbuy2, .kidsgrid .card3 .card3__info .btnbuy3, .kidsgrid .card3 .card3__info .btnbuy4, .kidsgrid .card3 .card4__info .btnbuy1, .kidsgrid .card3 .card4__info .btnbuy2, .kidsgrid .card3 .card4__info .btnbuy3, .kidsgrid .card3 .card4__info .btnbuy4, .kidsgrid .card4 .card1__info .btnbuy1, .kidsgrid .card4 .card1__info .btnbuy2, .kidsgrid .card4 .card1__info .btnbuy3, .kidsgrid .card4 .card1__info .btnbuy4, .kidsgrid .card4 .card2__info .btnbuy1, .kidsgrid .card4 .card2__info .btnbuy2, .kidsgrid .card4 .card2__info .btnbuy3, .kidsgrid .card4 .card2__info .btnbuy4, .kidsgrid .card4 .card3__info .btnbuy1, .kidsgrid .card4 .card3__info .btnbuy2, .kidsgrid .card4 .card3__info .btnbuy3, .kidsgrid .card4 .card3__info .btnbuy4, .kidsgrid .card4 .card4__info .btnbuy1, .kidsgrid .card4 .card4__info .btnbuy2, .kidsgrid .card4 .card4__info .btnbuy3, .kidsgrid .card4 .card4__info .btnbuy4 {
+          height: 103px;
+          width: 327px;
+          margin-top: 1px;
+          position: relative;
+          align-self: center; }
+          .kidsgrid .card1 .card1__info .btnbuy1 span, .kidsgrid .card1 .card1__info .btnbuy2 span, .kidsgrid .card1 .card1__info .btnbuy3 span, .kidsgrid .card1 .card1__info .btnbuy4 span, .kidsgrid .card1 .card2__info .btnbuy1 span, .kidsgrid .card1 .card2__info .btnbuy2 span, .kidsgrid .card1 .card2__info .btnbuy3 span, .kidsgrid .card1 .card2__info .btnbuy4 span, .kidsgrid .card1 .card3__info .btnbuy1 span, .kidsgrid .card1 .card3__info .btnbuy2 span, .kidsgrid .card1 .card3__info .btnbuy3 span, .kidsgrid .card1 .card3__info .btnbuy4 span, .kidsgrid .card1 .card4__info .btnbuy1 span, .kidsgrid .card1 .card4__info .btnbuy2 span, .kidsgrid .card1 .card4__info .btnbuy3 span, .kidsgrid .card1 .card4__info .btnbuy4 span, .kidsgrid .card2 .card1__info .btnbuy1 span, .kidsgrid .card2 .card1__info .btnbuy2 span, .kidsgrid .card2 .card1__info .btnbuy3 span, .kidsgrid .card2 .card1__info .btnbuy4 span, .kidsgrid .card2 .card2__info .btnbuy1 span, .kidsgrid .card2 .card2__info .btnbuy2 span, .kidsgrid .card2 .card2__info .btnbuy3 span, .kidsgrid .card2 .card2__info .btnbuy4 span, .kidsgrid .card2 .card3__info .btnbuy1 span, .kidsgrid .card2 .card3__info .btnbuy2 span, .kidsgrid .card2 .card3__info .btnbuy3 span, .kidsgrid .card2 .card3__info .btnbuy4 span, .kidsgrid .card2 .card4__info .btnbuy1 span, .kidsgrid .card2 .card4__info .btnbuy2 span, .kidsgrid .card2 .card4__info .btnbuy3 span, .kidsgrid .card2 .card4__info .btnbuy4 span, .kidsgrid .card3 .card1__info .btnbuy1 span, .kidsgrid .card3 .card1__info .btnbuy2 span, .kidsgrid .card3 .card1__info .btnbuy3 span, .kidsgrid .card3 .card1__info .btnbuy4 span, .kidsgrid .card3 .card2__info .btnbuy1 span, .kidsgrid .card3 .card2__info .btnbuy2 span, .kidsgrid .card3 .card2__info .btnbuy3 span, .kidsgrid .card3 .card2__info .btnbuy4 span, .kidsgrid .card3 .card3__info .btnbuy1 span, .kidsgrid .card3 .card3__info .btnbuy2 span, .kidsgrid .card3 .card3__info .btnbuy3 span, .kidsgrid .card3 .card3__info .btnbuy4 span, .kidsgrid .card3 .card4__info .btnbuy1 span, .kidsgrid .card3 .card4__info .btnbuy2 span, .kidsgrid .card3 .card4__info .btnbuy3 span, .kidsgrid .card3 .card4__info .btnbuy4 span, .kidsgrid .card4 .card1__info .btnbuy1 span, .kidsgrid .card4 .card1__info .btnbuy2 span, .kidsgrid .card4 .card1__info .btnbuy3 span, .kidsgrid .card4 .card1__info .btnbuy4 span, .kidsgrid .card4 .card2__info .btnbuy1 span, .kidsgrid .card4 .card2__info .btnbuy2 span, .kidsgrid .card4 .card2__info .btnbuy3 span, .kidsgrid .card4 .card2__info .btnbuy4 span, .kidsgrid .card4 .card3__info .btnbuy1 span, .kidsgrid .card4 .card3__info .btnbuy2 span, .kidsgrid .card4 .card3__info .btnbuy3 span, .kidsgrid .card4 .card3__info .btnbuy4 span, .kidsgrid .card4 .card4__info .btnbuy1 span, .kidsgrid .card4 .card4__info .btnbuy2 span, .kidsgrid .card4 .card4__info .btnbuy3 span, .kidsgrid .card4 .card4__info .btnbuy4 span {
+            display: inline-block;
+            height: 50px;
+            font-family: 'Suranna', serif;
+            font-size: 34px; }
+          .kidsgrid .card1 .card1__info .btnbuy1 button, .kidsgrid .card1 .card1__info .btnbuy2 button, .kidsgrid .card1 .card1__info .btnbuy3 button, .kidsgrid .card1 .card1__info .btnbuy4 button, .kidsgrid .card1 .card2__info .btnbuy1 button, .kidsgrid .card1 .card2__info .btnbuy2 button, .kidsgrid .card1 .card2__info .btnbuy3 button, .kidsgrid .card1 .card2__info .btnbuy4 button, .kidsgrid .card1 .card3__info .btnbuy1 button, .kidsgrid .card1 .card3__info .btnbuy2 button, .kidsgrid .card1 .card3__info .btnbuy3 button, .kidsgrid .card1 .card3__info .btnbuy4 button, .kidsgrid .card1 .card4__info .btnbuy1 button, .kidsgrid .card1 .card4__info .btnbuy2 button, .kidsgrid .card1 .card4__info .btnbuy3 button, .kidsgrid .card1 .card4__info .btnbuy4 button, .kidsgrid .card2 .card1__info .btnbuy1 button, .kidsgrid .card2 .card1__info .btnbuy2 button, .kidsgrid .card2 .card1__info .btnbuy3 button, .kidsgrid .card2 .card1__info .btnbuy4 button, .kidsgrid .card2 .card2__info .btnbuy1 button, .kidsgrid .card2 .card2__info .btnbuy2 button, .kidsgrid .card2 .card2__info .btnbuy3 button, .kidsgrid .card2 .card2__info .btnbuy4 button, .kidsgrid .card2 .card3__info .btnbuy1 button, .kidsgrid .card2 .card3__info .btnbuy2 button, .kidsgrid .card2 .card3__info .btnbuy3 button, .kidsgrid .card2 .card3__info .btnbuy4 button, .kidsgrid .card2 .card4__info .btnbuy1 button, .kidsgrid .card2 .card4__info .btnbuy2 button, .kidsgrid .card2 .card4__info .btnbuy3 button, .kidsgrid .card2 .card4__info .btnbuy4 button, .kidsgrid .card3 .card1__info .btnbuy1 button, .kidsgrid .card3 .card1__info .btnbuy2 button, .kidsgrid .card3 .card1__info .btnbuy3 button, .kidsgrid .card3 .card1__info .btnbuy4 button, .kidsgrid .card3 .card2__info .btnbuy1 button, .kidsgrid .card3 .card2__info .btnbuy2 button, .kidsgrid .card3 .card2__info .btnbuy3 button, .kidsgrid .card3 .card2__info .btnbuy4 button, .kidsgrid .card3 .card3__info .btnbuy1 button, .kidsgrid .card3 .card3__info .btnbuy2 button, .kidsgrid .card3 .card3__info .btnbuy3 button, .kidsgrid .card3 .card3__info .btnbuy4 button, .kidsgrid .card3 .card4__info .btnbuy1 button, .kidsgrid .card3 .card4__info .btnbuy2 button, .kidsgrid .card3 .card4__info .btnbuy3 button, .kidsgrid .card3 .card4__info .btnbuy4 button, .kidsgrid .card4 .card1__info .btnbuy1 button, .kidsgrid .card4 .card1__info .btnbuy2 button, .kidsgrid .card4 .card1__info .btnbuy3 button, .kidsgrid .card4 .card1__info .btnbuy4 button, .kidsgrid .card4 .card2__info .btnbuy1 button, .kidsgrid .card4 .card2__info .btnbuy2 button, .kidsgrid .card4 .card2__info .btnbuy3 button, .kidsgrid .card4 .card2__info .btnbuy4 button, .kidsgrid .card4 .card3__info .btnbuy1 button, .kidsgrid .card4 .card3__info .btnbuy2 button, .kidsgrid .card4 .card3__info .btnbuy3 button, .kidsgrid .card4 .card3__info .btnbuy4 button, .kidsgrid .card4 .card4__info .btnbuy1 button, .kidsgrid .card4 .card4__info .btnbuy2 button, .kidsgrid .card4 .card4__info .btnbuy3 button, .kidsgrid .card4 .card4__info .btnbuy4 button {
+            float: none;
+            display: inline-block;
+            height: 50px;
+            width: 176px;
+            margin: 0 40px 0 16px;
+            box-sizing: border-box;
+            border: transparent;
+            border-radius: 60px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #ffffff;
+            background-color: #311bf7; }
+  .infantil {
+    grid-area: infantil; }
+  .card2 {
+    grid-area: card2; }
+  .card3 {
+    grid-area: card3; }
+  .card4 {
+    grid-area: card4; }
+  .card1 {
+    grid-area: card1; } }
+
+@media only screen and (max-width: 834px) {
+  .kidsgrid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.05fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "infantil" "card1" "card2" "card3" "card4";
+    justify-items: center; }
+    .kidsgrid .infantil {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-size-adjust: 400%;
+      padding: 35px;
+      text-align: center;
+      text-size-adjust: 200%;
+      padding: 35px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #f5f5f5;
+      text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); }
+    .kidsgrid .card1, .kidsgrid .card2, .kidsgrid .card3, .kidsgrid .card4 {
+      display: grid;
+      max-width: 400px;
+      height: 750px;
+      margin: 50px 30px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      border-radius: 7px 7px 7px 7px;
+      background-color: white;
+      transition: 1s ease; }
+      .kidsgrid .card1:hover, .kidsgrid .card2:hover, .kidsgrid .card3:hover, .kidsgrid .card4:hover {
+        -webkit-transform: rotateZ(-2deg) scale(1.1);
+        -ms-transform: rotateZ(-2deg) scale(1.1);
+        transform: rotateZ(-2deg) scale(1.1);
+        transition: 1s ease; }
+      .kidsgrid .card1 img, .kidsgrid .card2 img, .kidsgrid .card3 img, .kidsgrid .card4 img {
+        height: auto;
+        max-width: 350px;
+        border-radius: 7px 7px 7px 7px;
+        align-self: center; }
+      .kidsgrid .card1 .card1__info, .kidsgrid .card1 .card2__info, .kidsgrid .card1 .card3__info, .kidsgrid .card1 .card4__info, .kidsgrid .card2 .card1__info, .kidsgrid .card2 .card2__info, .kidsgrid .card2 .card3__info, .kidsgrid .card2 .card4__info, .kidsgrid .card3 .card1__info, .kidsgrid .card3 .card2__info, .kidsgrid .card3 .card3__info, .kidsgrid .card3 .card4__info, .kidsgrid .card4 .card1__info, .kidsgrid .card4 .card2__info, .kidsgrid .card4 .card3__info, .kidsgrid .card4 .card4__info {
+        height: auto;
+        max-width: 340px;
+        border-radius: 7px 7px 10px 7px;
+        background-color: #ffffff;
+        color: black; }
+        .kidsgrid .card1 .card1__info h3, .kidsgrid .card1 .card2__info h3, .kidsgrid .card1 .card3__info h3, .kidsgrid .card1 .card4__info h3, .kidsgrid .card2 .card1__info h3, .kidsgrid .card2 .card2__info h3, .kidsgrid .card2 .card3__info h3, .kidsgrid .card2 .card4__info h3, .kidsgrid .card3 .card1__info h3, .kidsgrid .card3 .card2__info h3, .kidsgrid .card3 .card3__info h3, .kidsgrid .card3 .card4__info h3, .kidsgrid .card4 .card1__info h3, .kidsgrid .card4 .card2__info h3, .kidsgrid .card4 .card3__info h3, .kidsgrid .card4 .card4__info h3 {
+          margin: 0 0 0 10px;
+          padding-top: 10px;
+          font-size: 35px;
+          color: #474747; }
+        .kidsgrid .card1 .card1__info p, .kidsgrid .card1 .card2__info p, .kidsgrid .card1 .card3__info p, .kidsgrid .card1 .card4__info p, .kidsgrid .card2 .card1__info p, .kidsgrid .card2 .card2__info p, .kidsgrid .card2 .card3__info p, .kidsgrid .card2 .card4__info p, .kidsgrid .card3 .card1__info p, .kidsgrid .card3 .card2__info p, .kidsgrid .card3 .card3__info p, .kidsgrid .card3 .card4__info p, .kidsgrid .card4 .card1__info p, .kidsgrid .card4 .card2__info p, .kidsgrid .card4 .card3__info p, .kidsgrid .card4 .card4__info p {
+          height: auto;
+          margin: 10px 20px 10px 25px;
+          font-family: sans-serif, serif;
+          color: #8d8d8d;
+          font-size: 15px;
+          font-weight: lighter;
+          overflow: hidden;
+          align-self: center; }
+        .kidsgrid .card1 .card1__info .btnbuy1, .kidsgrid .card1 .card1__info .btnbuy2, .kidsgrid .card1 .card1__info .btnbuy3, .kidsgrid .card1 .card1__info .btnbuy4, .kidsgrid .card1 .card2__info .btnbuy1, .kidsgrid .card1 .card2__info .btnbuy2, .kidsgrid .card1 .card2__info .btnbuy3, .kidsgrid .card1 .card2__info .btnbuy4, .kidsgrid .card1 .card3__info .btnbuy1, .kidsgrid .card1 .card3__info .btnbuy2, .kidsgrid .card1 .card3__info .btnbuy3, .kidsgrid .card1 .card3__info .btnbuy4, .kidsgrid .card1 .card4__info .btnbuy1, .kidsgrid .card1 .card4__info .btnbuy2, .kidsgrid .card1 .card4__info .btnbuy3, .kidsgrid .card1 .card4__info .btnbuy4, .kidsgrid .card2 .card1__info .btnbuy1, .kidsgrid .card2 .card1__info .btnbuy2, .kidsgrid .card2 .card1__info .btnbuy3, .kidsgrid .card2 .card1__info .btnbuy4, .kidsgrid .card2 .card2__info .btnbuy1, .kidsgrid .card2 .card2__info .btnbuy2, .kidsgrid .card2 .card2__info .btnbuy3, .kidsgrid .card2 .card2__info .btnbuy4, .kidsgrid .card2 .card3__info .btnbuy1, .kidsgrid .card2 .card3__info .btnbuy2, .kidsgrid .card2 .card3__info .btnbuy3, .kidsgrid .card2 .card3__info .btnbuy4, .kidsgrid .card2 .card4__info .btnbuy1, .kidsgrid .card2 .card4__info .btnbuy2, .kidsgrid .card2 .card4__info .btnbuy3, .kidsgrid .card2 .card4__info .btnbuy4, .kidsgrid .card3 .card1__info .btnbuy1, .kidsgrid .card3 .card1__info .btnbuy2, .kidsgrid .card3 .card1__info .btnbuy3, .kidsgrid .card3 .card1__info .btnbuy4, .kidsgrid .card3 .card2__info .btnbuy1, .kidsgrid .card3 .card2__info .btnbuy2, .kidsgrid .card3 .card2__info .btnbuy3, .kidsgrid .card3 .card2__info .btnbuy4, .kidsgrid .card3 .card3__info .btnbuy1, .kidsgrid .card3 .card3__info .btnbuy2, .kidsgrid .card3 .card3__info .btnbuy3, .kidsgrid .card3 .card3__info .btnbuy4, .kidsgrid .card3 .card4__info .btnbuy1, .kidsgrid .card3 .card4__info .btnbuy2, .kidsgrid .card3 .card4__info .btnbuy3, .kidsgrid .card3 .card4__info .btnbuy4, .kidsgrid .card4 .card1__info .btnbuy1, .kidsgrid .card4 .card1__info .btnbuy2, .kidsgrid .card4 .card1__info .btnbuy3, .kidsgrid .card4 .card1__info .btnbuy4, .kidsgrid .card4 .card2__info .btnbuy1, .kidsgrid .card4 .card2__info .btnbuy2, .kidsgrid .card4 .card2__info .btnbuy3, .kidsgrid .card4 .card2__info .btnbuy4, .kidsgrid .card4 .card3__info .btnbuy1, .kidsgrid .card4 .card3__info .btnbuy2, .kidsgrid .card4 .card3__info .btnbuy3, .kidsgrid .card4 .card3__info .btnbuy4, .kidsgrid .card4 .card4__info .btnbuy1, .kidsgrid .card4 .card4__info .btnbuy2, .kidsgrid .card4 .card4__info .btnbuy3, .kidsgrid .card4 .card4__info .btnbuy4 {
+          height: 103px;
+          width: 327px;
+          margin-top: 1px;
+          position: relative;
+          align-self: center; }
+          .kidsgrid .card1 .card1__info .btnbuy1 span, .kidsgrid .card1 .card1__info .btnbuy2 span, .kidsgrid .card1 .card1__info .btnbuy3 span, .kidsgrid .card1 .card1__info .btnbuy4 span, .kidsgrid .card1 .card2__info .btnbuy1 span, .kidsgrid .card1 .card2__info .btnbuy2 span, .kidsgrid .card1 .card2__info .btnbuy3 span, .kidsgrid .card1 .card2__info .btnbuy4 span, .kidsgrid .card1 .card3__info .btnbuy1 span, .kidsgrid .card1 .card3__info .btnbuy2 span, .kidsgrid .card1 .card3__info .btnbuy3 span, .kidsgrid .card1 .card3__info .btnbuy4 span, .kidsgrid .card1 .card4__info .btnbuy1 span, .kidsgrid .card1 .card4__info .btnbuy2 span, .kidsgrid .card1 .card4__info .btnbuy3 span, .kidsgrid .card1 .card4__info .btnbuy4 span, .kidsgrid .card2 .card1__info .btnbuy1 span, .kidsgrid .card2 .card1__info .btnbuy2 span, .kidsgrid .card2 .card1__info .btnbuy3 span, .kidsgrid .card2 .card1__info .btnbuy4 span, .kidsgrid .card2 .card2__info .btnbuy1 span, .kidsgrid .card2 .card2__info .btnbuy2 span, .kidsgrid .card2 .card2__info .btnbuy3 span, .kidsgrid .card2 .card2__info .btnbuy4 span, .kidsgrid .card2 .card3__info .btnbuy1 span, .kidsgrid .card2 .card3__info .btnbuy2 span, .kidsgrid .card2 .card3__info .btnbuy3 span, .kidsgrid .card2 .card3__info .btnbuy4 span, .kidsgrid .card2 .card4__info .btnbuy1 span, .kidsgrid .card2 .card4__info .btnbuy2 span, .kidsgrid .card2 .card4__info .btnbuy3 span, .kidsgrid .card2 .card4__info .btnbuy4 span, .kidsgrid .card3 .card1__info .btnbuy1 span, .kidsgrid .card3 .card1__info .btnbuy2 span, .kidsgrid .card3 .card1__info .btnbuy3 span, .kidsgrid .card3 .card1__info .btnbuy4 span, .kidsgrid .card3 .card2__info .btnbuy1 span, .kidsgrid .card3 .card2__info .btnbuy2 span, .kidsgrid .card3 .card2__info .btnbuy3 span, .kidsgrid .card3 .card2__info .btnbuy4 span, .kidsgrid .card3 .card3__info .btnbuy1 span, .kidsgrid .card3 .card3__info .btnbuy2 span, .kidsgrid .card3 .card3__info .btnbuy3 span, .kidsgrid .card3 .card3__info .btnbuy4 span, .kidsgrid .card3 .card4__info .btnbuy1 span, .kidsgrid .card3 .card4__info .btnbuy2 span, .kidsgrid .card3 .card4__info .btnbuy3 span, .kidsgrid .card3 .card4__info .btnbuy4 span, .kidsgrid .card4 .card1__info .btnbuy1 span, .kidsgrid .card4 .card1__info .btnbuy2 span, .kidsgrid .card4 .card1__info .btnbuy3 span, .kidsgrid .card4 .card1__info .btnbuy4 span, .kidsgrid .card4 .card2__info .btnbuy1 span, .kidsgrid .card4 .card2__info .btnbuy2 span, .kidsgrid .card4 .card2__info .btnbuy3 span, .kidsgrid .card4 .card2__info .btnbuy4 span, .kidsgrid .card4 .card3__info .btnbuy1 span, .kidsgrid .card4 .card3__info .btnbuy2 span, .kidsgrid .card4 .card3__info .btnbuy3 span, .kidsgrid .card4 .card3__info .btnbuy4 span, .kidsgrid .card4 .card4__info .btnbuy1 span, .kidsgrid .card4 .card4__info .btnbuy2 span, .kidsgrid .card4 .card4__info .btnbuy3 span, .kidsgrid .card4 .card4__info .btnbuy4 span {
+            display: inline-block;
+            height: 50px;
+            font-family: 'Suranna', serif;
+            font-size: 34px; }
+          .kidsgrid .card1 .card1__info .btnbuy1 button, .kidsgrid .card1 .card1__info .btnbuy2 button, .kidsgrid .card1 .card1__info .btnbuy3 button, .kidsgrid .card1 .card1__info .btnbuy4 button, .kidsgrid .card1 .card2__info .btnbuy1 button, .kidsgrid .card1 .card2__info .btnbuy2 button, .kidsgrid .card1 .card2__info .btnbuy3 button, .kidsgrid .card1 .card2__info .btnbuy4 button, .kidsgrid .card1 .card3__info .btnbuy1 button, .kidsgrid .card1 .card3__info .btnbuy2 button, .kidsgrid .card1 .card3__info .btnbuy3 button, .kidsgrid .card1 .card3__info .btnbuy4 button, .kidsgrid .card1 .card4__info .btnbuy1 button, .kidsgrid .card1 .card4__info .btnbuy2 button, .kidsgrid .card1 .card4__info .btnbuy3 button, .kidsgrid .card1 .card4__info .btnbuy4 button, .kidsgrid .card2 .card1__info .btnbuy1 button, .kidsgrid .card2 .card1__info .btnbuy2 button, .kidsgrid .card2 .card1__info .btnbuy3 button, .kidsgrid .card2 .card1__info .btnbuy4 button, .kidsgrid .card2 .card2__info .btnbuy1 button, .kidsgrid .card2 .card2__info .btnbuy2 button, .kidsgrid .card2 .card2__info .btnbuy3 button, .kidsgrid .card2 .card2__info .btnbuy4 button, .kidsgrid .card2 .card3__info .btnbuy1 button, .kidsgrid .card2 .card3__info .btnbuy2 button, .kidsgrid .card2 .card3__info .btnbuy3 button, .kidsgrid .card2 .card3__info .btnbuy4 button, .kidsgrid .card2 .card4__info .btnbuy1 button, .kidsgrid .card2 .card4__info .btnbuy2 button, .kidsgrid .card2 .card4__info .btnbuy3 button, .kidsgrid .card2 .card4__info .btnbuy4 button, .kidsgrid .card3 .card1__info .btnbuy1 button, .kidsgrid .card3 .card1__info .btnbuy2 button, .kidsgrid .card3 .card1__info .btnbuy3 button, .kidsgrid .card3 .card1__info .btnbuy4 button, .kidsgrid .card3 .card2__info .btnbuy1 button, .kidsgrid .card3 .card2__info .btnbuy2 button, .kidsgrid .card3 .card2__info .btnbuy3 button, .kidsgrid .card3 .card2__info .btnbuy4 button, .kidsgrid .card3 .card3__info .btnbuy1 button, .kidsgrid .card3 .card3__info .btnbuy2 button, .kidsgrid .card3 .card3__info .btnbuy3 button, .kidsgrid .card3 .card3__info .btnbuy4 button, .kidsgrid .card3 .card4__info .btnbuy1 button, .kidsgrid .card3 .card4__info .btnbuy2 button, .kidsgrid .card3 .card4__info .btnbuy3 button, .kidsgrid .card3 .card4__info .btnbuy4 button, .kidsgrid .card4 .card1__info .btnbuy1 button, .kidsgrid .card4 .card1__info .btnbuy2 button, .kidsgrid .card4 .card1__info .btnbuy3 button, .kidsgrid .card4 .card1__info .btnbuy4 button, .kidsgrid .card4 .card2__info .btnbuy1 button, .kidsgrid .card4 .card2__info .btnbuy2 button, .kidsgrid .card4 .card2__info .btnbuy3 button, .kidsgrid .card4 .card2__info .btnbuy4 button, .kidsgrid .card4 .card3__info .btnbuy1 button, .kidsgrid .card4 .card3__info .btnbuy2 button, .kidsgrid .card4 .card3__info .btnbuy3 button, .kidsgrid .card4 .card3__info .btnbuy4 button, .kidsgrid .card4 .card4__info .btnbuy1 button, .kidsgrid .card4 .card4__info .btnbuy2 button, .kidsgrid .card4 .card4__info .btnbuy3 button, .kidsgrid .card4 .card4__info .btnbuy4 button {
+            float: none;
+            display: inline-block;
+            height: 50px;
+            width: 176px;
+            margin: 0 40px 0 16px;
+            box-sizing: border-box;
+            border: transparent;
+            border-radius: 60px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #ffffff;
+            background-color: #311bf7; }
+  .infantil {
+    grid-area: infantil; }
+  .card2 {
+    grid-area: card2; }
+  .card3 {
+    grid-area: card3; }
+  .card4 {
+    grid-area: card4; }
+  .card1 {
+    grid-area: card1; } }
+
+/*Carrito de compras */
+.text-center {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px; }
+
+.checkout {
+  background-color: green; }
+
+.removeAll {
+  background-color: red; }
+
+.bi-x-lg {
+  color: red;
+  font-weight: bold; }
+
+/**
+  * ! style rules for shopping-cart
+  **/
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px; }
+
+/**
+  * ! style rules for cart-item
+  **/
+.cart-item {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: flex; }
+  .cart-item .details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 20px; }
+    .cart-item .details .title-price-x {
+      color: black;
+      width: 195px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px;
+      font-size: 24px; }
+    .cart-item .details .title-price {
+      display: flex;
+      align-items: center;
+      gap: 10px; }
+      .cart-item .details .title-price .cart-item-price {
+        background-color: #212529;
+        color: white;
+        border-radius: 4px;
+        padding: 3px 6px 0px 3px; }
+    .cart-item .details .buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      font-size: 20px; }
+      .cart-item .details .buttons .bi-dash-lg {
+        color: red; }
+      .cart-item .details .buttons .bi-plus-lg {
+        color: green; }
+
+/*--ENCUENTRANOS--*/
+.encuentranos {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #3F72AF;
+  font-family: 'Roboto Slab', serif;
+  align-items: center; }
+  .encuentranos .map {
+    overflow: hidden;
+    padding-bottom: 50.25%;
+    position: relative;
+    height: 0; }
+    .encuentranos .map iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute; }
+
+/*CONTACTO*/
+.contacto {
+  background-color: #3F72AF;
+  font-family: 'Roboto Slab', serif;
+  align-items: center;
+  text-align: center; }
+  .contacto h1 {
+    padding-top: 35px; }
+  .contacto form {
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    margin-top: 1em;
+    display: inline-block;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 60%; }
+    .contacto form #submit {
+      color: white;
+      background: rgba(32, 6, 150, 0.856);
+      cursor: pointer;
+      max-width: 100px; }
+    .contacto form #reset {
+      color: white;
+      background: rgba(32, 6, 150, 0.856);
+      cursor: pointer;
+      max-width: 100px; }
+    .contacto form input, .contacto form textarea {
+      border: 0;
+      outline: 0;
+      padding: 1em;
+      border-radius: 8px;
+      display: inline-block;
+      width: 100%;
+      margin-top: 1em;
+      font-family: 'Merriweather', sans-serif;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      resize: none; }

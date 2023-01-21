@@ -1,0 +1,74 @@
+
+/*--MQUERY HEADER--*/
+@import "./base/variables";
+@media only screen and (max-width: 874px){
+
+    header {
+            background-color: $header-color;
+            nav{
+                
+                ul{
+                    list-style:none;
+                    font-family: 'Roboto Slab', serif;
+                    margin-block-end: 1em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                    padding-inline-start: 40px;
+                    
+                    li  {
+                        list-style:none;
+                        font-family: 'Roboto Slab', serif;
+                        display: inline-block;
+                        color: white;
+                        text-align: center;
+                        padding: 10px 10px;
+                        text-decoration: none;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            }
+                        }
+                    .nav-tabs{
+                        text-size-adjust: 19px;
+                        font-size:15px;
+                        }
+                    }
+                }
+            }
+}
+
+@media only screen and (max-width: 500px){
+
+    header {
+            background-color: $header-color;
+            nav{
+                ul{
+                    list-style:none;
+                    font-family: 'Roboto Slab', serif;
+                    margin-block-end: 1em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                    padding-inline-start: 40px;
+                    li{
+                        list-style:none;
+                        font-family: 'Roboto Slab', serif;
+                        display: inline-block;
+                        color: white;
+                        text-align: center;
+                        padding: 6px 6px;
+                        text-decoration: none;
+                            a{
+                            text-decoration: none;
+                            color: white;
+                            }
+                        }
+                    .nav-tabs{
+                        text-size-adjust: 19px;
+                        font-size:13px;
+                            }
+                    }
+                }
+        }
+}
+
+

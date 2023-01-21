@@ -1,0 +1,17 @@
+/*GRID MAIN BODY INDEX*/
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: repeat (auto-fit, minmax(200px, 1fr)) ;
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "cabecera cabecera cabecera"
+    "carrusel carrusel carrusel"
+    "lmv lmv lmv"
+    "acercade acercade acercade"
+  }
+  .cabecera { grid-area: cabecera; }
+  .carrusel { grid-area: carrusel; }
+  .lmv { grid-area: lmv; }
+  .acercade { grid-area: acercade; }

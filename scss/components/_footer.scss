@@ -1,0 +1,23 @@
+/*FOOTER*/
+@import "./base/variables";
+footer {
+        background-color: $main-color;
+        font-family: 'Roboto Slab', serif;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-align: end;
+        img{
+            height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            justify-content: end;
+            align-items: flex-end;
+            }
+        h4  {
+            color: white;
+            font-size: 11px;
+            padding-right: 15px;
+            }    
+        }
